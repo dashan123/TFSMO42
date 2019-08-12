@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/package_name">
+    
+     <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
+            android:id="@+id/imageView_b64_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:src="@mipmap/zhanwei"
+            />
+    
+    <!-- 
+    
+    <ImageView 
+        android:id="@+id/imageview_tiff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:scaleType="fitCenter"
+        android:clickable="true"/>
+     
+     
+     <uk.co.senab.photoview.PhotoView
+        android:id="@+id/photoview_b64_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:scaleType="fitCenter"
+        android:clickable="true"
+        android:src="@drawable/zhanwei" />
+     
+    
+     -->
+    
+     
+     
+     
+    
+
+</RelativeLayout>

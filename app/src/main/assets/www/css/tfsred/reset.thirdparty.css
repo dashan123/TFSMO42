@@ -1,0 +1,16 @@
+/*重写mobiscroll listView的item样式*/
+.mbsc-lv-mobiscroll .mbsc-lv-item{padding:0px;}
+/*重写mobiscroll calendar样式：年月日的文字大小，顶部按钮的高度*/
+.mbsc-mobiscroll .mbsc-cal-day-fg{font-size:14px;}
+.mbsc-mobiscroll .mbsc-cal-day-m {bottom: 8px;}
+.mbsc-cal-month, .mbsc-cal-year {font-size: 14px;}
+.mbsc-cal-btnw {height: 30px;}
+/*重写List的padding*/
+.mbsc-lv-mobiscroll .mbsc-lv-item {
+    /*margin-top: -1px;
+    padding: 1.25em;
+    background: #f7f7f7;
+    color: #454545;
+    font-weight: normal;*/
+    padding: 0.5em;
+}

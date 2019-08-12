@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="fill_parent"
+
+    android:layout_height="fill_parent"
+    android:background="#000"
+    
+    >
+
+    <Button
+        android:id="@+id/button_back_bigpic"
+        android:layout_width="65dp"
+        android:layout_height="32dp"
+        android:textColor="#fff"
+        android:textSize="23dp"
+        android:onClick="exitImg"
+        android:text="返回" 
+        android:gravity="center"
+        android:background="#4eee"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <cn.com.cloud9.imagezoomview.ImageZoomView
+
+        android:id="@+id/zoomView"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        
+        >
+
+    </cn.com.cloud9.imagezoomview.ImageZoomView>
+
+    <ZoomControls
+        android:id="@+id/zoomCtrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp" />
+    
+    
+
+</RelativeLayout>

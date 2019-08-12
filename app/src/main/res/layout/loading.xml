@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:layout_width="match_parent"	
+        android:layout_height="match_parent"
+        android:background="@mipmap/imagewelcome" />
+
+    <!-- 
+    
+    <ImageView
+        android:id="@+id/waitImageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="43dip"
+        android:layout_marginTop="376dip"
+        android:layout_toLeftOf="@+id/locateTextview"
+        android:background="@drawable/waitdot_1" />
+
+    <ImageView
+        android:id="@+id/waitImageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="23dip"
+        android:layout_marginTop="376dip"
+        android:layout_toLeftOf="@+id/locateTextview"
+        android:background="@drawable/waitdot_1" />
+
+    <ImageView
+        android:id="@+id/waitImageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3dip"
+        android:layout_marginTop="376dip"
+        android:layout_toLeftOf="@+id/locateTextview"
+        android:background="@drawable/waitdot_1" />
+
+    <ImageView
+        android:id="@+id/waitImageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dip"
+        android:layout_marginTop="376dip"
+        android:layout_toRightOf="@+id/locateTextview"
+        android:background="@drawable/waitdot_1" />
+
+    <ImageView
+        android:id="@+id/waitImageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dip"
+        android:layout_marginTop="376dip"
+        android:layout_toRightOf="@+id/locateTextview"
+        android:background="@drawable/waitdot_1" />
+
+    <ImageView
+        android:id="@+id/waitImageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="43dip"
+        android:layout_marginTop="376dip"
+        android:layout_toRightOf="@+id/locateTextview"
+        android:background="@drawable/waitdot_1" />
+
+    <TextView
+        android:id="@+id/locateTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="396dp"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="1dip" />
+
+    <TextView
+        android:id="@+id/loadingTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/locateTextview"
+        android:layout_centerHorizontal="true"
+        android:text="启动中..."
+        android:textColor="#FFFFFF" />
+    
+    
+     -->
+    
+
+</RelativeLayout>

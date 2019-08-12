@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SubsamplingLlibrary/SubsamplingLlibrary.iml" filepath="$PROJECT_DIR$/SubsamplingLlibrary/SubsamplingLlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Scantwobarcodes/scantwobarcodes.iml" filepath="$PROJECT_DIR$/Scantwobarcodes/scantwobarcodes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tfsmo4Android_42.iml" filepath="$PROJECT_DIR$/tfsmo4Android_42.iml" />
+    </modules>
+  </component>
+</project>

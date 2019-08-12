@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/top_bar_height"
+    android:layout_alignParentTop="true"
+    android:clickable="true"
+    android:gravity="center"
+    android:background="@color/main_menu_background" >
+    
+    <ImageView 
+        android:id="@+id/top_bar_switch_camera"
+        android:layout_width="@dimen/btn_switch_camera"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:src="@drawable/btn_swtich_camera"/>
+    
+    <ImageView 
+        android:id="@+id/top_bar_camera_light"
+        android:layout_width="@dimen/btn_camera_light"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:visibility="visible"
+        android:src="@drawable/btn_camera_light"/>
+    
+
+</LinearLayout>

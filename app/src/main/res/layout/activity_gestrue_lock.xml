@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <cn.com.cloud9.common.Lock9View
+        android:id="@+id/lock_set_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        app:lock9_enableVibrate="true"
+        app:lock9_lineColor="@color/blue_light"
+        app:lock9_lineErrColor="@color/red_light"
+        app:lock9_lineWidth="5dp"
+        app:lock9_nodeErrSrc="@drawable/node_error"
+        app:lock9_nodeOnSrc="@drawable/node_active"
+        app:lock9_nodeSrc="@drawable/node_normal"
+        app:lock9_padding="40dp"
+        app:lock9_spacing="40dp" >
+    </cn.com.cloud9.common.Lock9View>
+
+    <TextView
+        android:id="@+id/lock_set_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="text"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/gesturelock_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="42dp"
+        android:text="取消"
+        android:clickable="true"
+        android:onClick="cancel"
+        android:textSize="16dp" />
+
+</RelativeLayout>

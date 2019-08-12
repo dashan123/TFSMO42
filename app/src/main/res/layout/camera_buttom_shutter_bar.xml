@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/buttom_bar_height"
+    android:layout_alignParentBottom="true"
+    android:clickable="true"
+    android:gravity="center"
+    
+    android:background="@color/shutter_background" >
+    
+	<!-- 
+	
+	
+	 -->
+	
+	
+	<TextView 
+	    android:id="@+id/tv_cancel"
+	    android:gravity="center"
+	    android:layout_width="0dp"
+	    android:layout_height="match_parent"
+	    android:textSize="20dp"
+	    android:text="@string/text_return"
+	    android:textColor="#fff"
+	    android:layout_weight="1"
+	    android:clickable="true"
+	    android:onClick="onClick"/>
+	
+	<ImageView
+	    android:id="@+id/ib_shutter"
+	    android:clickable="true"
+	    android:layout_width="0dp"
+	    android:layout_height="@dimen/shutter_height"
+	    android:layout_weight="1"
+	    android:onClick="onClick"
+	    android:src="@drawable/btn_shutter_camera"
+	    android:scaleType="fitCenter" />
+	
+	<TextView 
+	    android:id="@+id/tv_confirm"
+	    android:layout_weight="1"
+	    android:gravity="center"
+	    android:layout_width="0dp"
+	    android:layout_height="match_parent"
+	    android:textSize="20dp"
+	    android:text="@string/text_confirm"
+	    android:textColor="#fff"
+	    android:clickable="false"
+	    android:visibility="invisible"
+	    android:onClick="onClick"
+		/>
+
+</LinearLayout>

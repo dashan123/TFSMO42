@@ -1,0 +1,195 @@
+.RwPd{position: absolute;left: 5px;top:6px;width: 4rem;height: 3rem;text-align: right;padding-right: 5px;background:url('../../images/tfsred/pkrw_white.png') no-repeat;background-size: auto 55%; background-position: 0.1 1rem;} 
+.RwPd span{color:#fff;}
+.RwCc{position: absolute;left: 5px;top:6px;width: 4rem;height: 3rem;text-align: right;padding-right: 5px;background:url('../../images/tfsred/ccrw_white.png') no-repeat;background-size: auto 55%; background-position: 0.1 1rem;} 
+.RwCc span{color:#fff;}
+
+.SelectiveTask{display:none;}
+.ListRow{width: 100%;height: auto;padding-bottom: 10px;border-bottom:0px solid #ccc;background:#fff;}
+.margin-t10{margin-top: 1rem;}
+
+.auditListContentDiv{-webkit-box-flex:1; overflow-y:scroll; }
+.auditListContent .basicInfo{border-top:1px solid #E6E6E6;}
+.auditListContent .basicInfo li {display: -webkit-box;height: 3rem;line-height: 3rem;background: #fff;padding: 0 5px;border-bottom: 1px solid #E6E6E6;}
+.auditListContent .basicInfo li span{font-size:14px;}
+/* .auditListContent .mg-top{border-top:1px solid #E6E6E6;} */
+.auditListDealerStorehouseList{background-color:#fff}
+/* .auditListDealerStorehouse{height:auto;line-height:35px;width:100%; border-top:1px solid #E6E6E6;padding-left:10px;} */
+.auditListDealerStorehouse{height:auto;width:100%; line-height:25px;padding-top:5px;padding-bottom:5px;padding-left:10px;}
+.auditListDealerStorehouse span{font-size:14px;}
+
+.auditALLShow{width: 100%;height: 3rem;line-height: 3rem;padding: 0px 10px; box-sizing:border-box;background: #fff; position: relative;border-bottom: 1px solid #d4d4d4;}
+.auditALLShow em{position: absolute;width:2.4rem;height: 2.4rem;background: url('../../images/tfsred/down.png') no-repeat;background-size:auto 50%; right: 10px; top: 8px;}
+.auditALLShow label{font-size:1.3rem;}
+
+.dealerStorehouseSelected{background-color:red;}
+.auditListUl{
+	list-style:none; /* 去掉ul前面的符号 */
+    margin: 0px; /* 与外界元素的距离为0 */
+    padding: 0px; /* 与内部元素的距离为0 */
+    width: auto; /* 宽度根据元素内容调整 */
+}
+.auditListUl li{float:left;list-style:none;}
+/* .auditListHeader{
+	list-style:none; 去掉ul前面的符号
+    margin: 0px; 与外界元素的距离为0
+    padding: 0px; 与内部元素的距离为0
+    width: auto; 宽度根据元素内容调整
+} */
+.auditListHeader li{float:left;list-style:none;}
+
+/* 页面右上角添加按钮：图标配4个汉字 */
+.OtherBtn2{position: absolute;right: 0;width: 5rem;height: 4rem;text-align: right;padding-right: 5px;background:url('../../images/tfsred/more.png') no-repeat;background-size: auto 55%; background-position-x: 0px; background-position-y:12px;} 
+.OtherBtn2 span{color:#fff;}
+#sampleBtn{position: absolute;right: 0;width: 7.5rem;height: 4rem;text-align: right;padding-right: 5px;background:url('../../images/tfsred/sampleBtn.png') no-repeat;background-size: auto 60%; background-position-x: 0px; background-position-y:12px;}
+#sampleBtn span{color:#fff;}
+
+.mbsc-ios .mbsc-segmented{padding:0.5em 0 0 0;}
+.mbsc-segmented-content {font-size:18px;}
+
+.auditSegmentedButtonGroup{text-align:center;margin:5px auto;}
+.auditSegmentedButtonGroup .segmentedButtons3Selected{border:none;width:25%;height:35px;background-color:#d0001a;color:white;font-size:15px;outline:none;}
+.auditSegmentedButtonGroup .segmentedButtons3Unselected{border:1px solid #d0001a;width:25%;height:35px;background-color:#f5f5f5;color:#d0001a;font-size:15px;}
+
+.auditSegmentedButtonGroup .segmentedButtons4Selected{border:none;width:20%;height:35px;background-color:#d0001a;color:white;font-size:15px;outline:none;}
+.auditSegmentedButtonGroup .segmentedButtons4Unselected{border:1px solid #d0001a;width:20%;height:35px;background-color:#f5f5f5;color:#d0001a;font-size:15px;}
+
+.auditSegmentedButtonGroup .segmentedButtons5Selected{border:none;width:18%;height:35px;background-color:#d0001a;color:white;font-size:15px;outline:none;}
+.auditSegmentedButtonGroup .segmentedButtons5Unselected{border:1px solid #d0001a;width:18%;height:35px;background-color:#f5f5f5;color:#d0001a;font-size:15px;}
+
+/* .auditReportEditContentDiv{-webkit-box-flex:1; overflow-y:scroll; } */
+.auditReportEditContentDiv{position:fixed;top:15rem;bottom:15rem;}
+.auditReportEditNumericKeyboardRow1{position:fixed;bottom:5rem;border-bottom:0px;height:3.5rem; padding:0px 0px 0px 3px; background:#d4d4d4;}
+.auditReportEditNumericKeyboardRow2{position:fixed;bottom:8.5rem;border-bottom:1px;height:3.5rem; padding:0px 0px 0px 3px; background:#d4d4d4;}
+.auditReportEditNumericKeyboardRow3{position:fixed;bottom:12rem;border-bottom:1px;height:3.5rem; padding:0px 0px 0px 3px; background:#d4d4d4;}
+.auditReportEditNumericKeyboardNumber{height: 100%; width:22%; border: none; font-size: 2rem; background:#fff;margin:5px 1%;}
+.auditReportEditNumericKeyboardDelete{height: 100%; width:22%; border: none; font-size: 2rem; background:#fff;margin:5px 1%;}
+
+.auditReportViewContentDiv{position:fixed;top:15rem;bottom:15rem;}
+.auditReportViewNumericKeyboardRow1{position:fixed;bottom:0.1rem;border-bottom:0px;height:3.5rem; padding:0px 0px 0px 3px; background:#d4d4d4;}
+.auditReportViewNumericKeyboardRow2{position:fixed;bottom:3.6rem;border-bottom:1px;height:3.5rem; padding:0px 0px 0px 3px; background:#d4d4d4;}
+.auditReportViewNumericKeyboardRow3{position:fixed;bottom:7.1rem;border-bottom:1px;height:3.5rem; padding:0px 0px 0px 3px; background:#d4d4d4;}
+.auditReportViewNumericKeyboardNumber{height: 100%; width:22%; border: none; font-size: 2rem; background:#fff;margin:5px 1%;}
+.auditReportViewNumericKeyboardDelete{height: 100%; width:22%; border: none; font-size: 2rem; background:#fff;margin:5px 1%;}
+
+.auditReportEditMore{position:fixed;bottom:10rem;border-bottom:0px;height:3rem; padding-top:0px;}
+
+#barCodeBtn{position: absolute;right: 0;width: 5rem;text-align: right;padding-right: 5px;background:url('../../images/tfsred/tiaoxingma.png') no-repeat;background-size: auto 85%; background-position-y: 30%;}
+#QRCodeBtn{position: absolute;right: 0;width: 5rem;text-align: right;padding-right: 5px;background:url('../../images/tfsred/erweima.png') no-repeat;background-size: auto 85%; background-position-y: 30%;}
+
+.auditReportEditPhotoBtn{position: absolute;right: 0;width: 5rem;text-align: right;padding-right: 5px;background:url('../../images/tfsred/pictures.png') no-repeat;background-size: auto 85%; background-position-y: 30%;} 
+.auditReportEditPhotoBtn span{color:#fff;}
+.auditReportEditConfirmBtn{position: absolute;right: 0;width: 5rem;text-align: right;padding-right: 5px;background:url('../../images/tfsred/icon21.png') no-repeat;background-size: auto 85%; background-position-y: 30%;} 
+.auditReportEditConfirmBtn span{color:#fff;}
+
+.KeyIcon img{display: inline-block;width: 1.5rem;height: 1.5rem;vertical-align: middle;margin-top: -3px;}
+
+/* .auditReportEditSelect input {-webkit-box-flex: 1;border: 1px solid #a9a9a9;background: none;-webkit-appearance: none;padding:5px 0px;font-size:14px;} */
+/* .auditReportEditSelectContent .basicInfo1{border-top:1px solid #E6E6E6;} */
+.auditReportEditSelectContent p {display: -webkit-box;height: 3rem;line-height: 3rem;background: #fff;padding: 0 3px;}
+.auditReportEditSelectContent p span {font-size:14px; height: 2rem;display: block;line-height: 2rem;}
+/* .auditReportEditSelectContent p .LeftSpan {width:20%;}
+.auditReportEditSelectContent p .RightSpan {width:30%;} */
+.auditReportEditSelectContent p span input {font-size:14px;padding:0px; display: block;-webkit-box-flex: 1;border: 1px solid #a9a9a9;background: none;-webkit-appearance: none;line-height: 2rem;}
+.auditReportEditSelectContent p span input {width:95%;}
+
+.auditReportViewSelectContent p {display: -webkit-box;background: #fff;padding: 0 3px;}
+.auditReportViewSelectContent p span {font-size:14px; display: block; height:25px;line-height: 25px;}
+.auditReportViewSelectContent p span input {font-size:14px;padding:0px; display: block;-webkit-box-flex: 1;border: 1px solid #a9a9a9;background: none;-webkit-appearance: none;}
+.auditReportViewSelectContent p span input {width:95%;height:25px; line-height: 25px;}
+
+.auditReportEditCarBatchSet input{display:none;}
+.auditReportEditKeyBatchSet input{display:none;}
+.auditReportEditQcBatchSet input{display:none;}
+
+.auditWorkloadStatistical_personnelContent,
+.auditWorkloadStatistical_areaContent {padding: 1.8rem 0;}
+.auditWorkloadStatistical_personnelContent .dateChooseBar,
+.auditWorkloadStatistical_areaContent .dateChooseBar {width: 100%;height: 3.2rem;background: #fff;border-bottom: 1px solid #D4D4D4;border-top: 1px solid #D4D4D4;padding: 0 10px;display: -webkit-box;}
+.auditWorkloadStatistical_personnelContent .dateChooseBar .chooseConditions,
+.auditWorkloadStatistical_areaContent .dateChooseBar .chooseConditions {-webkit-box-flex: 1;display: -webkit-box;}
+.auditWorkloadStatistical_personnelContent .dateChooseBar .chooseConditions .exchange,
+.auditWorkloadStatistical_areaContent .dateChooseBar .chooseConditions .exchange {width: 1.4rem;height: 1.1rem;background: url(../../images/tfsred/change.jpg) no-repeat;background-size: cover;display: block;margin: 0 .8rem;margin-top: 1rem;}
+.auditWorkloadStatistical_personnelContent .dateChooseBar .chooseConditions .startDate,
+.auditWorkloadStatistical_areaContent .dateChooseBar .chooseConditions .startDate,
+.auditWorkloadStatistical_personnelContent .dateChooseBar .chooseConditions .endDate,
+.auditWorkloadStatistical_areaContent .dateChooseBar .chooseConditions .endDate {display: block;width: 6.8rem;height: 2rem;line-height: 2rem;padding-left: .3rem;margin-top: 6px;background: #F7F7F7;color: #666;border: 1px solid #D4D4D4;border-radius: 3px;position: relative;}
+.auditWorkloadStatistical_personnelContent .dateChooseBar .chooseConditions .startDate i,
+.auditWorkloadStatistical_areaContent .dateChooseBar .chooseConditions .startDate i,
+.auditWorkloadStatistical_personnelContent .dateChooseBar .chooseConditions .endDate i,
+.auditWorkloadStatistical_areaContent .dateChooseBar .chooseConditions .endDate i {width: .6rem;height: .4rem;background: url(../../images/tfsred/triangle.jpg) no-repeat;background-size: cover;position: absolute;right: .3rem;top: .8rem;}
+.auditWorkloadStatistical_personnelContent .dateChooseBar .chooseBtn,
+.auditWorkloadStatistical_areaContent .dateChooseBar .chooseBtn {width: 3rem;height: 2rem;margin-left: 2rem;margin-top: 5px;background: #d0001a url(../../images/tfsred/search_1.jpg) no-repeat center center;background-size: 45% auto;border-radius: 3px;}
+.auditWorkloadStatistical_areaContent .StatisticalResult {width: 100%;border-top: 1px solid #E7E7E7;margin-top: 1.7rem;}
+.auditWorkloadStatistical_areaContent .StatisticalResult li {word-break:break-all; border-bottom: 1px solid #E7E7E7;height: auto;display: -webkit-box;}
+.auditWorkloadStatistical_areaContent .StatisticalResult li h3{display: block;width: 16.67%;padding: .2rem 0;text-align: center;line-height: auto;background: #fff;border-right: 1px solid #E7E7E7;}
+.auditWorkloadStatistical_areaContent .StatisticalResult li h4{display: block;width: 16.67%;padding: .2rem 0;text-align: center;line-height: auto;background: #fff;border-right: 1px solid #E7E7E7;}
+.auditWorkloadStatistical_areaContent .StatisticalResult li span {display: block;width: 16.67%;padding: .2rem 0;text-align: center;line-height: auto;background: #fff;border-right: 1px solid #E7E7E7;}
+.auditWorkloadStatistical_areaContent .StatisticalResult li h4 {line-height: auto;}
+.auditWorkloadStatistical_areaContent .StatisticalResult li h4:last-child {border-right: none;}
+.auditWorkloadStatistical_areaContent .StatisticalResult li span {color: #D2001D;}
+.auditWorkloadStatistical_areaContent .StatisticalResult li span:last-child {border-right: none;}
+
+.auditCustodianDealerListContentDiv{-webkit-box-flex:1; overflow-y:scroll;}
+.auditCustodianDealer{height:auto;line-height:35px;width:100%; border-top:1px solid #E6E6E6;padding-left:10px;
+		background:#fff;white-space:nowrap;overflow: hidden;text-overflow:ellipsis;}
+.auditCustodianDealer span{font-size:14px;}
+.auditCustodianDealerSelected{background-color:yellow;}
+
+.auditCustodianDealerQc{height:auto;line-height:35px;width:100%; border-bottom:1px solid #E6E6E6;padding-left:10px;
+		background:#fff;white-space:nowrap;overflow: hidden;text-overflow:ellipsis;}
+.auditCustodianDealerQc span{font-size:14px;}
+
+.auditCustodianDealerStorehouseList{background-color:#fff}
+.auditCustodianDealerStorehouse{height:auto;line-height:35px;width:100%; border-top:1px solid #E6E6E6;padding-left:10px;
+		background:#fff;white-space:nowrap;overflow: hidden;text-overflow:ellipsis;}
+.auditCustodianDealerStorehouse span{font-size:14px;}
+
+.auditCustodianDealerQcListContent .basicInfo{border-top:1px solid #E6E6E6;}
+.auditCustodianDealerQcListContent .basicInfo li {display: -webkit-box;height: 3rem;line-height: 3rem;background: #fff;padding: 0 5px;border-bottom: 1px solid #E6E6E6;}
+.auditCustodianDealerQcListContent .basicInfo li span{font-size:14px;}
+.auditCustodianDealerQcListHeader li{float:left;list-style:none;}
+.auditCustodianDealerQcListContentDiv{-webkit-box-flex:1; overflow-y:scroll; }
+.auditCustodianDealerQcListUl{
+	list-style:none; /* 去掉ul前面的符号 */
+    margin: 0px; /* 与外界元素的距离为0 */
+    padding: 0px; /* 与内部元素的距离为0 */
+    width: auto; /* 宽度根据元素内容调整 */
+}
+.auditCustodianDealerQcListUl li{float:left;list-style:none;}
+
+.auditCustodianSelfieImagePicDiv{width: 100%; height: 100%;padding: 0px 10px; box-sizing:border-box; margin-top: 20px;}
+.auditCustodianSelfieImagePicDiv dl{width: 100%;float: left;padding: 10px;box-sizing:border-box; position: relative;}
+.auditCustodianSelfieImagePicDiv dl dt{width: 100%;height: auto;}
+.auditCustodianSelfieImagePicDiv dl dt img{display: block;width: 100%;height: auto;}
+.auditCustodianSelfieImagePicDiv dl dd{display: none;position: absolute;width: 2rem;height: 2rem; background: url('../../images/tfsred/del.png') no-repeat; right: 3px; top: 3px; background-size:100% auto;}
+.auditCustodianSelfieImagePicDiv dl.act dt{border: 1px solid #ccc;}
+.auditCustodianSelfieImagePicDiv dl.act dd{display: block;}
+
+.auditCustodianReportEditSelectContent p {display: -webkit-box;height: 3rem;line-height: 3rem;background: #fff;padding: 0 3px;}
+.auditCustodianReportEditSelectContent p span {font-size:14px; height: 2rem;display: block;line-height: 2rem;}
+.auditCustodianReportEditSelectContent p span input {font-size:14px;padding:0px; display: block;-webkit-box-flex: 1;border: 1px solid #a9a9a9;background: none;-webkit-appearance: none;line-height: 2rem;}
+.auditCustodianReportEditSelectContent p span input {width:95%;}
+
+.auditCustodianReportEditContentDiv{position:fixed;}
+
+.auditPolicyDealerListContentDiv{-webkit-box-flex:1; overflow-y:scroll;}
+.auditPolicyDealer{height:auto;line-height:35px;width:100%; border-top:1px solid #E6E6E6;padding-left:10px;
+		background:#fff;white-space:nowrap;overflow: hidden;text-overflow:ellipsis;}
+.auditPolicyDealer span{font-size:14px;}
+
+.detailsDivInput {font-size:14px;padding:0px; display: block;-webkit-box-flex: 1;border: none;background: none;-webkit-appearance: none;line-height: 3.5rem;}
+
+.storehouseBox{
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  border-top:1px solid #E6E6E6;
+}
+.storehouseBox .item{
+  flex: 1;
+}
+.storehouseBox .item1{
+  flex: 1 0 85%;
+}
+.storehouseBox .item2{
+  flex: 0 0 15%;
+}

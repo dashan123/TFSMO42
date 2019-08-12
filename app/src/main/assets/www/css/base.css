@@ -1,0 +1,141 @@
+@charset "utf-8";
+/* CSS Document */
+.header{height:4rem;background:#d0001a;color:#fff; position:relative;line-height:4rem;font-size:18px; position:fixed;width:100%;top:0;left:0;z-index:9999}
+.header .icon_index{width:18px;height:18px;background:url(../../images/tfsred/icon3.png);background-size:cover;display:inline-block;vertical-align:middle;margin:-3px 10px 0}
+.header .icon_return{ position:absolute;line-height:50px;font-size:18px;top:0;color:#fff;height:50px}
+.header .icon_return i{width:15px;height:15px;background:url(../../images/tfsred/icon15.png);background-size:cover;display:inline-block;vertical-align:middle;margin:-3px 10px 0}
+.header .reload{ position:absolute;line-height:50px;font-size:18px;right:10px;top:0;color:#fff;height:50px}
+.header .reload i{width:18px;height:18px;background:url(../../images/tfsred/icon4.png) no-repeat;background-size:18px;display:inline-block;vertical-align:middle;margin-right:5px;margin-top:-3px}
+.header .subs{ position:absolute;line-height:50px;font-size:18px;right:75px;top:0;color:#fff;height:50px}
+.header .subs i{width:18px;height:18px;background:url(../../images/tfsred/icon21.png) no-repeat;background-size:cover;display:inline-block;vertical-align:middle;margin-right:5px;margin-top:-3px}
+.header .ret{ position:absolute;line-height:50px;font-size:18px;right:10px;top:0;color:#fff;height:50px}
+.header .ret i{width:18px;height:18px;background:url(../../images/tfsred/icon22.png) no-repeat;background-size:cover;display:inline-block;vertical-align:middle;margin-right:5px;margin-top:-3px}
+.header .download{ position:absolute;line-height:50px;font-size:18px;right:10px;top:0;color:#fff;height:50px}
+.header .download i{width:18px;height:18px;background:url(../../images/tfsred/icon27.png) no-repeat;background-size:18px;display:inline-block;vertical-align:middle;margin-right:7px;margin-top:-1px}
+.header .save{ position:absolute;line-height:50px;font-size:18px;right:10px;top:0;color:#fff;height:50px}
+.header .save i{width:18px;height:18px;background:url(../../images/tfsred/icon32.png) no-repeat;background-size:18px;display:inline-block;vertical-align:middle;margin-right:7px;margin-top:-1px}
+.header .tab1{height:25px; position:absolute;right:0;top:0;left:0;bottom:0;margin: auto;width:80px;border:1px solid #fff;border-radius:5px;overflow:hidden}
+.header .tab1 a{float:left;width:38px;height:23px;border:1px solid #099fde;color:#fff;font-size:14px;line-height:23px; text-align:center}
+.header .tab1 a.sel{border:1px solid #fff;color:#099fde;background:#fff}
+
+.header .edit{ position:absolute;line-height:50px;font-size:18px;right:10px;top:0;color:#fff;height:50px}
+.header .edit i{width:18px;height:18px;background:url(../../images/tfsred/icon58.png) no-repeat;background-size:18px;display:inline-block;vertical-align:middle;margin-right:7px;margin-top:-1px}
+.header .addperson{ position:absolute;line-height:50px;font-size:18px;right:10px;top:0;color:#fff;height:50px}
+.header .addperson i{width:24px;height:24px;background:url(../../images/tfsred/icon59.png) no-repeat;background-size:24px;display:inline-block;vertical-align:middle;margin-right:7px;margin-top:-1px}
+
+.header .fav{ position:absolute;line-height:50px;font-size:18px;right:10px;top:0;color:#fff;height:50px}
+.header .fav span{ color:#fff;}
+.header .fav i{width:18px;height:18px;background:url(../images/tfsred/icon39.png) no-repeat;background-size:cover;display:inline-block;vertical-align:middle;margin-right:7px;margin-top:-3px}
+.header .faved i{width:18px;height:18px;background:url(../images/tfsred/icon38.png) no-repeat;background-size:cover;display:inline-block;vertical-align:middle;margin-right:7px;margin-top:-3px}
+
+.h_40{width:100%;height:40px;overflow:hidden;}
+.h_48{width:100%;height:48px;overflow:hidden;}
+.h_50{width:100%;height:50px;overflow:hidden;}
+.h_60{width:100%;height:60px;overflow:hidden;}
+.h_74{width:100%;height:74px;overflow:hidden;}
+.h_100{width:100%;height:100px;overflow:hidden;}
+.h_200{width:100%;height:200px;overflow:hidden;}
+.h_260{width:100%;height:260px;overflow:hidden;}
+.h_280{width:100%;height:280px;overflow:hidden;}
+
+
+.listul{width:100%;overflow:hidden;}
+.listul li{width:25%;height:120px;overflow:hidden;padding-top:0;float:left;}
+.listul li a{height:120px;width:100%;display:block;overflow:hidden; text-align:center}
+.listul li a .imgcell{ position:relative;overflow:hidden}
+
+.listul li a img{margin-top:10px}
+.listul li i{font-style:normal;font-size:14px;color:#333;display:block; text-align:center;margin-top:0px}
+.listul li em{display:block; text-align:center;font-size:14px;font-style:normal;color:#9c3022}
+
+.iconListul{width:100%;overflow:hidden;}
+.iconListul li{width:25%;height:100px;overflow:hidden;padding-top:0;float:left;}
+.iconListul li a{height:100px;width:100%;display:block;overflow:hidden; text-align:center}
+.iconListul li a .imgcell{ position:relative;overflow:hidden}
+
+.iconListul li a img{margin-top:10px}
+.iconListul li i{font-style:normal;font-size:14px;color:#333;display:block; text-align:center;margin-top:0px}
+.iconListul li em{display:block; text-align:center;font-size:14px;font-style:normal;color:#9c3022}
+
+.h_54{width:100%;height:54px;overflow:hidden;clear:both}
+.bottoms{ position:fixed;bottom:0;width:100%;left:0;background:#f5f5f5;border-top:1px solid #e4e4e4;padding-top:3px;z-index:99;}
+.bottoms li{float:left;width:25%;overflow:hidden; text-align:center;height:54px}
+.bottoms li a{width:100%;display:block;overflow:hidden}
+.bottoms li a div{height:30px;line-height:30px; position:relative;display:inline-block}
+.bottoms li a div span{ position:absolute;right:-10px;top:0px;background:#ff1e00;color:#fff;height:15px;width:15px;line-height:15px; text-align:center;font-size:12px;border-radius:2px}
+.bottoms li a div img{max-height:40px;display:inline-block;vertical-align:middle}
+.bottoms li a i{display:block; font-style:normal;font-size:14px; text-align:center;color:#999}
+.bottoms li a.sel i{color:#d0001a}
+
+
+.bottoms3{ position:fixed;bottom:0;width:100%;left:0;background:#f5f5f5;border-top:1px solid #e4e4e4;padding-top:3px;z-index:99;}
+.bottoms3 li{float:left;width:33%;overflow:hidden; text-align:center;height:54px}
+.bottoms3 li a{width:100%;display:block;overflow:hidden}
+.bottoms3 li a div{height:30px;line-height:30px; position:relative;display:inline-block}
+.bottoms3 li a div span{ position:absolute;right:-10px;top:0px;background:#ff1e00;color:#fff;height:15px;width:15px;line-height:15px; text-align:center;font-size:12px;border-radius:2px}
+.bottoms3 li a div img{max-height:40px;display:inline-block;vertical-align:middle}
+.bottoms3 li a i{display:block; font-style:normal;font-size:14px; text-align:center;color:#999}
+.bottoms3 li a.sel i{color:#d0001a}
+
+.bottoms4{ position:fixed;bottom:0;width:100%;left:0;background:#f5f5f5;border-top:1px solid #e4e4e4;padding-top:3px;z-index:99;}
+.bottoms4 li{float:left;width:25%;overflow:hidden; text-align:center;height:54px}
+.bottoms4 li a{width:100%;display:block;overflow:hidden}
+.bottoms4 li a div{height:30px;line-height:30px; position:relative;display:inline-block}
+.bottoms4 li a div span{ position:absolute;right:-10px;top:0px;background:#ff1e00;color:#fff;height:15px;width:15px;line-height:15px; text-align:center;font-size:12px;border-radius:2px}
+.bottoms4 li a div img{max-height:40px;display:inline-block;vertical-align:middle}
+.bottoms4 li a i{display:block; font-style:normal;font-size:14px; text-align:center;color:#999}
+.bottoms4 li a.sel i{color:#d0001a}
+
+.bottoms2{ position:fixed;bottom:0;width:100%;left:0;background:#f5f5f5;border-top:1px solid #e4e4e4;padding-top:3px;z-index:99;}
+.bottoms2 li{float:left;width:50%;overflow:hidden; text-align:center;height:54px}
+.bottoms2 li a{width:100%;display:block;overflow:hidden}
+.bottoms2 li a div{height:30px;line-height:30px; position:relative;display:inline-block}
+.bottoms2 li a div span{ position:absolute;right:-10px;top:0px;background:#ff1e00;color:#fff;height:15px;width:15px;line-height:15px; text-align:center;font-size:12px;border-radius:2px}
+.bottoms2 li a div img{max-height:40px;display:inline-block;vertical-align:middle}
+.bottoms2 li a i{display:block; font-style:normal;font-size:14px; text-align:center;color:#999}
+.bottoms2 li a.sel i{color:#d0001a}
+
+.bottoms1-red{ position:fixed;bottom:0;width:100%;left:0;background:#D0001A;border-top:1px solid #e4e4e4;padding-top:3px;z-index:99;}
+.bottoms1-red li{float:left;width:100%;overflow:hidden; text-align:center;height:54px}
+.bottoms1-red li a{width:100%;display:block;overflow:hidden}
+.bottoms1-red li a div{height:30px;line-height:30px; position:relative;display:inline-block}
+.bottoms1-red li a div span{ position:absolute;right:-10px;top:0px;background:#ff1e00;color:#fff;height:15px;width:15px;line-height:15px; text-align:center;font-size:12px;border-radius:2px}
+.bottoms1-red li a div img{max-height:40px;display:inline-block;vertical-align:middle}
+.bottoms1-red li a i{display:block; font-style:normal;font-size:14px; text-align:center;color:white;}
+.bottoms1-red li a.sel i{color:white;}
+
+.bottoms2-red{ position:fixed;bottom:0;width:100%;left:0;background:#D0001A;border-top:1px solid #e4e4e4;padding-top:3px;z-index:99;}
+.bottoms2-red li{float:left;width:50%;overflow:hidden; text-align:center;height:54px}
+.bottoms2-red li a{width:100%;display:block;overflow:hidden}
+.bottoms2-red li a div{height:30px;line-height:30px; position:relative;display:inline-block}
+.bottoms2-red li a div span{ position:absolute;right:-10px;top:0px;background:#ff1e00;color:#fff;height:15px;width:15px;line-height:15px; text-align:center;font-size:12px;border-radius:2px}
+.bottoms2-red li a div img{max-height:40px;display:inline-block;vertical-align:middle}
+.bottoms2-red li a i{display:block; font-style:normal;font-size:14px; text-align:center;color:white;}
+.bottoms2-red li a.sel i{color:white;}
+
+.bottoms3-red{ position:fixed;bottom:0;width:100%;left:0;background:#D0001A;border-top:1px solid #e4e4e4;padding-top:3px;z-index:99;}
+.bottoms3-red li{float:left;width:33%;overflow:hidden; text-align:center;height:54px}
+.bottoms3-red li a{width:100%;display:block;overflow:hidden}
+.bottoms3-red li a div{height:30px;line-height:30px; position:relative;display:inline-block}
+.bottoms3-red li a div span{ position:absolute;right:-10px;top:0px;background:#ff1e00;color:#fff;height:15px;width:15px;line-height:15px; text-align:center;font-size:12px;border-radius:2px}
+.bottoms3-red li a div img{max-height:40px;display:inline-block;vertical-align:middle}
+.bottoms3-red li a i{display:block; font-style:normal;font-size:14px; text-align:center;color:white;}
+.bottoms3-red li a.sel i{color:white;}
+
+.bottoms4-red{ position:fixed;bottom:0;width:100%;left:0;background:#D0001A;border-top:1px solid #e4e4e4;padding-top:3px;z-index:99;}
+.bottoms4-red li{float:left;width:25%;overflow:hidden; text-align:center;height:54px}
+.bottoms4-red li a{width:100%;display:block;overflow:hidden}
+.bottoms4-red li a div{height:30px;line-height:30px; position:relative;display:inline-block}
+.bottoms4-red li a div span{ position:absolute;right:-10px;top:0px;background:#ff1e00;color:#fff;height:15px;width:15px;line-height:15px; text-align:center;font-size:12px;border-radius:2px}
+.bottoms4-red li a div img{max-height:40px;display:inline-block;vertical-align:middle}
+.bottoms4-red li a i{display:block; font-style:normal;font-size:14px; text-align:center;color:white}
+.bottoms4-red li a.sel i{color:white}
+
+.bottoms5-red{ position:fixed;bottom:0;width:100%;left:0;background:#D0001A;border-top:1px solid #e4e4e4;padding-top:3px;z-index:99;}
+.bottoms5-red li{float:left;width:20%;overflow:hidden; text-align:center;height:54px}
+.bottoms5-red li a{width:100%;display:block;overflow:hidden}
+.bottoms5-red li a div{height:30px;line-height:30px; position:relative;display:inline-block}
+.bottoms5-red li a div span{ position:absolute;right:-10px;top:0px;background:#ff1e00;color:#fff;height:15px;width:15px;line-height:15px; text-align:center;font-size:12px;border-radius:2px}
+.bottoms5-red li a div img{max-height:40px;display:inline-block;vertical-align:middle}
+.bottoms5-red li a i{display:block; font-style:normal;font-size:14px; text-align:center;color:white}
+.bottoms5-red li a.sel i{color:white}

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    android:id="@+id/scrollview_main">
+    <!--blocksDescendants   viewgroup覆盖子控件而直接获得焦点-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativelayout_main"
+        >
+
+    <!-- android:background="#00000000"
+        
+        android:cacheColorHint="#00000000" -->
+    <cn.com.cloud9.asynctask.MyWebview
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:scrollbars="none" 
+        />
+    
+    <uk.co.senab.photoview.PhotoView
+        android:id="@+id/photoview_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:scaleType="fitCenter"
+        android:clickable="true"
+        android:src="@mipmap/zhanwei"
+        android:layout_marginTop="48dp"/>
+    
+
+    <!-- 
+    <cn.com.cloud9.asynctask.HackyViewPager
+        android:id="@+id/viewpager_invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="#fff"
+        android:clickable="true"/>
+    
+    上边属性用到android:layout_marginTop="@dimen/viewpager_margin_top"
+    
+    <uk.co.senab.photoview.PhotoView
+        android:id="@+id/photoview_invisisible"
+        android:layout_width="match_parent"	
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:scaleType="fitCenter"
+        android:background="#fff"
+        android:layout_marginTop="48dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageview_invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:scaleType="fitCenter"
+        android:background="#fff"
+        android:layout_marginTop="48dp"
+        android:adjustViewBounds="true"/>
+    
+     -->
+
+    </RelativeLayout>
+</ScrollView>

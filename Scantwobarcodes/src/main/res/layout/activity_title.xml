@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/scan_codes_bg"
+    >
+
+    <TextView
+        android:id="@+id/textview_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="扫描二维码"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:background="#e333"
+        android:layout_toRightOf="@+id/button_back"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"/>
+
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="25dip"
+        android:background="@drawable/scan_codes_back"
+        android:textColor="@android:color/white"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_change_scan_area"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="15sp"-->
+        <!--android:text="@string/scan_bar_code"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:paddingRight="15dp"-->
+        <!--android:textColor="@color/blue_light"/>-->
+
+    <!--<Spinner-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/spinner"-->
+        <!--android:spinnerMode="dropdown"-->
+        <!--android:entries="@array/spinner_for_scan_codes"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentEnd="true"/>-->
+
+</RelativeLayout>

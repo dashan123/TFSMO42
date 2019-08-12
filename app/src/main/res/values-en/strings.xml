@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="exit">Exit</string>
+    <string name="exit_msg">Are you sure to exit?</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="js_alert">Prompt</string>
+    <string name="js_confirm">Confirm</string>
+
+    <string name="gesture_lock_set">Draw your password</string>
+    <string name="gesture_lock_confirm">Draw your password again</string>
+    <string name="gesture_lock_confirm_err">Not match, draw again</string>
+
+    <string name="gesture_lock_login">Input password to login</string>
+    <string name="gesture_lock_login_err">Invalid password, try again</string>
+</resources>

@@ -1,0 +1,135 @@
+
+/* 页面右上角添加按钮：图标配4个汉字 */
+.addButton4{position: absolute;right: 0;width: 7.5rem;height: 4rem;text-align: right;padding-right: 5px;background:url('../../images/tfsred/Add.png') no-repeat;background-size: auto 55%; background-position-x: 0px; background-position-y:12px;} 
+.addButton4 span{color:#fff;}
+
+/* 日程标题 */
+.scheduleTitle{
+	background-repeat: no-repeat;
+	background-size: 22px;
+	background-position: 5px 7px;
+	padding-left: 33px;
+	}
+
+
+/* 普通日程标题图标 */
+.normalScheduleTitleIcon{background-image: url(../../images/tfsred/fi_normal_schedule_white.png);}
+/* 家访任务日程标题图标 */
+.fiTaskScheduleTitleIcon{background-image: url(../../images/tfsred/fi_fi_task_white.png);}
+/* 自定义任务日程标题图标 */
+.customTaskScheduleTitleIcon{background-image: url(../../images/tfsred/fi_custome_task_white.png);}
+
+/* 详情内容：添加普通日程 */
+
+/* 添加普通日程 */
+.detailsContent {padding: 1rem 0;}
+.detailsContent .basicInfo{border-top:1px solid #E6E6E6;}
+.detailsContent .basicInfo li {display: -webkit-box;height: 2.5rem;line-height: 2.5rem;background: #fff;padding: 0 10px;border-bottom: 1px solid #E6E6E6;}
+.detailsContent .basicInfo li label {font-size:6px; width: 7rem;height: 2.5rem;display: block;line-height: 2.5rem;}
+.detailsContent .basicInfo li input {display: block;-webkit-box-flex: 1;border: none;background: none;-webkit-appearance: none;line-height: 3.5rem;}
+.detailsContent .mg-bt {margin-bottom: 1rem;}
+.detailsContent .mg-top{border-top:1px solid #E6E6E6;}
+.detailsContent .checkBtn {width: 90%;height: 3.2rem;margin: .5rem auto;margin-bottom: 3rem; margin-top:2rem;line-height: 3.2rem;border-radius: 5px;background: #D0001A;color: #fff;text-align: center;font-size: 1.4rem;}
+/* 添加普通日程 */
+.detailsContent .basicInfo1{border-top:1px solid #E6E6E6;}
+.detailsContent .basicInfo1 li {display: -webkit-box;height: 3.5rem;line-height: 3.5rem;background: #fff;padding: 0 10px;border-bottom: 1px solid #E6E6E6;}
+.detailsContent .basicInfo1 li label {font-size:14px; width: 7rem;height: 3.5rem;display: block;line-height: 3.5rem;}
+.detailsContent .basicInfo1 li input {font-size:14px;padding:0px; display: block;-webkit-box-flex: 1;border: none;background: none;-webkit-appearance: none;line-height: 3.5rem;}
+
+/*折叠列表*/
+.fiTaskDetailsContent {padding: 0rem 0;}
+.fiTaskDetailsContent .basicInfo li {display: -webkit-box;height: 3.5rem;line-height: 3.5rem;background: #fff;padding: 0 10px;border-bottom: 1px solid #E6E6E6;}
+.fiTaskDetailsContent .basicInfo li.selectedLiColor{background-color:#d0001a;}
+.fiTaskDetailsContent .basicInfo li.unSelectedLiColor{background-color:#fff;}
+.fiTaskDetailsContent .basicInfo li label {width: 5rem;height: 3.5rem;display: block;line-height: 3.5rem;}
+.fiTaskDetailsContent .basicInfo1 li {display: -webkit-box;height: auto;line-height: 3rem;background: #fff;padding: 0 10px;border-bottom: 1px solid #E6E6E6;}
+.fiTaskDetailsContent .basicInfo1 li label {width: 5rem;height: auto;display: block;line-height: 3rem;}
+.fiTaskDetailsContent .basicInfo1 li input {display: block;-webkit-box-flex: 1;border: none;background: none;-webkit-appearance: none;padding:11px 0px;font-size:12px;}
+.fiTaskDetailsContent .mg-bt {margin-bottom: 1rem;}
+.fiTaskDetailsContent .checkBtn {width: 90%;height: 3.2rem;margin: .5rem auto;margin-bottom: 3rem;line-height: 3.2rem;border-radius: 5px;background: #D0001A;color: #fff;text-align: center;font-size: 14px;}
+
+.fiCustomTaskDetailsContent {padding: 0rem 0;}
+.fiCustomTaskDetailsContent .basicInfo li {display: -webkit-box;height: 3.5rem;line-height: 3.5rem;background: #fff;padding: 0 10px;border-bottom: 1px solid #E6E6E6;}
+.fiCustomTaskDetailsContent .basicInfo li label {width: 5rem;height: 3.5rem;display: block;line-height: 3.5rem;}
+.fiCustomTaskDetailsContent .basicInfo1 li {display: -webkit-box;height: auto;line-height: 3rem;background: #fff;padding: 0 10px;border-bottom: 1px solid #E6E6E6;}
+.fiCustomTaskDetailsContent .basicInfo1 li label {width: 5rem;height: auto;display: block;line-height: 3rem;}
+.fiCustomTaskDetailsContent .basicInfo1 li input {display: block;-webkit-box-flex: 1;border: none;background: none;-webkit-appearance: none;padding:11px 0px;font-size:12px;}
+.fiCustomTaskDetailsContent .mg-bt {margin-bottom: 1rem;}
+.fiCustomTaskDetailsContent .checkBtn {width: 90%;height: 3.2rem;margin: .5rem auto;margin-bottom: 3rem;line-height: 3.2rem;border-radius: 5px;background: #D0001A;color: #fff;text-align: center;font-size: 14px;}
+
+
+.ContentDiv .search-box-2row .topBar { width: 100%;height: 42px;padding: 0 10px;display: -webkit-box;background: #fff;line-height: 42px;border-bottom: 1px solid #DADADA;}
+.ContentDiv .search-box-2row .topBar .all {height: 42px;line-height:42px;display: block;-webkit-box-flex: 1;}
+.ContentDiv .search-box-2row .topBar .allBtn {width: .8rem;height: .5rem;display: block;margin-top: 1.4rem;background: url(../../images/tfsred/allBtn.jpg) no-repeat;background-size: 100% auto;}
+.ContentDiv .search-box-2row .topBar .allBtn_down {width: .8rem;height: .5rem;display: block;margin-top: 1.4rem;background: url(../../images/tfsred/allBtn_down.png) no-repeat;background-size: 100% auto;}
+.ContentDiv .search-box-2row .topBar .allBtn_up{width: .8rem;height: .5rem;display: block;margin-top: 1.4rem;background: url(../../images/tfsred/allBtn_up.png) no-repeat;background-size: 100% auto;}
+
+/*留言*/
+.segmentedButtonGroup{text-align:center;margin:5px auto;}
+
+.segmentedButtonGroup .segmentedButtons1Selected{border:none;width:90%;height:30px;background-color:#d0001a;color:white;font-size:12px;}
+.segmentedButtonGroup .segmentedButtons1Unselected{border:1px solid #d0001a;width:90%;height:30px;background-color:#f5f5f5;color:#d0001a;font-size:12px;}
+
+.segmentedButtonGroup .segmentedButtons2Selected{border:none;width:40%;height:30px;background-color:#d0001a;color:white;font-size:12px;}
+.segmentedButtonGroup .segmentedButtons2Unselected{border:1px solid #d0001a;width:40%;height:30px;background-color:#f5f5f5;color:#d0001a;font-size:12px;}
+
+.segmentedButtonGroup .segmentedButtons3Selected{border:none;width:30%;height:30px;background-color:#d0001a;color:white;font-size:12px;}
+.segmentedButtonGroup .segmentedButtons3Unselected{border:1px solid #d0001a;width:30%;height:30px;background-color:#f5f5f5;color:#d0001a;font-size:12px;}
+
+ /*去掉ul li默认的margin padding 值*/
+/* .fiUnfinishedTaskStatisticsContentDiv{padding-top:15px;padding-bottom:15px;} */
+.fiUnfinishedTaskStatisticsHeaderUl,
+.fiUnfinishedTaskStatisticsUl,
+.fiUnfinishedTaskStatisticsLi{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+.fiUnfinishedTaskStatisticsHeaderUl,
+.fiUnfinishedTaskStatisticsUl{
+	width:100%;
+	border-top:1px solid #E7E7E7;
+	background:#fff;
+	height:35px;
+}
+.fiUnfinishedTaskStatisticsHeaderUl,
+.fiUnfinishedTaskStatisticsUl{
+	display: -webkit-flex; /* Safari */
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.fiUnfinishedTaskStatisticsLi{
+	flex:auto;
+	border-right:1px solid #E7E7E7;
+	width:33%;
+	line-height:35px;
+	text-align:center;
+}
+
+.fiUnfinishedTaskStatisticsLi h3{
+	font-size:14px;
+	display: block;
+	padding: .2rem 0;
+	text-align: center;
+	line-height: 2.5rem;
+}
+
+.fiUnfinishedTaskStatisticsLi h4{
+	font-size:12px;
+	color:#D2001D;
+	display: block;
+	padding: .2rem 0;
+	text-align: center;
+	line-height: 2.5rem;
+}
+.fiUnfinishedTaskStatisticsLi h5{
+	font-size:12px;
+	display: block;
+	padding: .2rem 0;
+	text-align: center;
+	line-height: 2.5rem;
+}
+.hideBtn{diplay:none;}
+
+

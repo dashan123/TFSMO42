@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<!-- manifest="offonline/offline.appcache" -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>丰田金融移动OA系统</title>
+<!-- *************************************** css file begin *************************************** -->
+<link rel="stylesheet" href="themes/jquery.mobile.structure-1.2.0.css" />
+
+<link rel="stylesheet" href="css/oa/common.css" />
+<link rel="stylesheet" href="css/oa/login.css" />
+<link rel="stylesheet" href="css/oa/item.css" />
+<link rel="stylesheet" href="css/oa/ch_base.css" />
+<link rel="stylesheet" href="css/oa/approval.css" >
+<link rel="stylesheet" href="css/oa/app_list.css" >
+<link rel="stylesheet" href="css/oa/sel.css" >
+<link rel="stylesheet" href="css/oa/page.css" >
+<link rel="stylesheet" href="css/iscroll.css" />
+<!-- *************************************** css file end *************************************** -->
+
+<!-- ***************************************************** javascript file begin ******************************************************************* -->
+<!-- ***************************** system javascript  **************************** -->
+<script src="js/third_party_file/jquery/jquery-1.8.2.min.js"></script>
+<script src="js/third_party_file/jquery/jquery.mobile-1.2.0.js"></script>
+<script src="js/third_party_file/iscroll/iscroll.js"></script>
+<script src="js/third_party_file/localResizeIMG/lrz.all.bundle.js"></script>
+<script src="js/third_party_file/watermarkjs/watermark.js"></script>
+<script src="http://webapi.amap.com/maps?v=1.3&key=194f834da4303d8eafc19cd6d2eadaa2&plugin=AMap.Geocoder"></script>
+
+<!-- ***************************** common javascript  **************************** -->
+<script src="js/common/function.js" charset="utf-8"></script>
+<script src="js/common/common.js" charset="utf-8"></script>
+<script src="js/login/loading.js" charset="utf-8"></script>
+<script src="js/config/config.js" charset="utf-8"></script>
+
+<script type='text/javascript'>//<![CDATA[ 
+$(window).load(function(){ 
+/** 
+* convertImgToBase64 
+* @param {String} url 
+* @param {Function} callback 
+* @param {String} [outputFormat='image/png'] 
+* @author HaNdTriX 
+* @example 
+convertImgToBase64('http://goo.gl/AOxHAL', function(base64Img){ 
+console.log('IMAGE:',base64Img); 
+}) 
+*/ 
+function convertImgToBase64(url, callback, outputFormat){ 
+var canvas = document.createElement('CANVAS'); 
+var ctx = canvas.getContext('2d'); 
+var img = new Image; 
+img.crossOrigin = 'Anonymous'; 
+img.onload = function(){ 
+canvas.height = img.height; 
+canvas.width = img.width; 
+ctx.drawImage(img,0,0); 
+var dataURL = canvas.toDataURL(outputFormat || 'image/png'); 
+callback.call(this, dataURL); 
+// Clean up 
+canvas = null; 
+}; 
+img.src = url; 
+} 
+
+$('#img2b64').submit(function(event){ 
+var imageUrl = $(this).find('input[name=url]').val(); 
+console.log('imageUrl', imageUrl); 
+convertImgToBase64(imageUrl, function(base64Img){ 
+$('.output') 
+.find('textarea') 
+.val(base64Img) 
+.end() 
+.find('a') 
+.attr('href', base64Img) 
+.text(base64Img) 
+.end() 
+.find('img') 
+.attr('src', base64Img); 
+}); 
+
+event.preventDefault(); 
+}); 
+
+});//]]> 
+
+</script> 
+</head>
+
+<body>
+
+	<div data-role="page" style="padding:0px" id="login_page" >
+		<div class="loginsection">
+		   <div class="headers">
+			</div>
+			<div class="login-cell">
+				<div class="s1">
+					<span></span>
+					<input placeholder="请输入OA系统账号" type="text" id="username_id">
+				</div>
+			</div>
+			<a href="#" class="submit" id="goto_submit_id" onclick="vlogin();">登录</a>
+		</div>
+		<script>
+			var login_page = $('#login_page');
+			login_page.live('pageshow',function(e, ui){
+				var username = local.get("username");
+				if(username && ""!=username && ""!=$.trim(username)){
+					$("#username_id").val(username);
+				}
+			});
+			
+			function vlogin() {
+				var userAccount = $("#username_id").val();
+				if($.trim(userAccount) == "") {
+					showMessage('请输入用户名','1500');
+					return false;
+				}
+				local.set("username",$.trim(userAccount));
+				session.set("hasloginin","yes");
+				goto_page("portal_page");
+			}
+		</script>
+	</div>
+
+
+	<div data-role="page" style="padding:0px" id="portal_page" >
+		<div id="wrapper" class="wrapper">
+			<div id="scroller">
+
+		<a href="#" class="submit" onclick="test21();" >检测GPS状态</a>
+        <a href="#" class="submit" onclick="test1();" >检测网络状态</a>
+		<a href="#" class="submit" onclick="test2();" >发送短信</a>
+		<a href="#" class="submit" onclick="test3();" >发送邮件</a>
+
+		<a href="#" class="submit" onclick="initLocationPar();" >位置服务参数设定</a>
+		<a href="#" class="submit" onclick="test4();" >开启位置服务</a>
+		<a href="#" class="submit" onclick="test5();" >停止位置服务</a>
+		<a href="#" class="submit" onclick="test6();" >检测位置服务状态</a>
+		<a href="#" class="submit" onclick="test16();" >开始上传历史位置数据</a>
+		<a href="#" class="submit" onclick="viewLoc();" >getLastKnownLoaction</a>
+
+		<a href="#" class="submit" onclick="test7();" >手势密码设定</a>
+		<a href="#" class="submit" onclick="test8();" >手势密码清除</a>
+		<a href="#" class="submit" onclick="test9();" >检测手势密码状态</a>
+		<a href="#" class="submit" onclick="test10();" >手势密码登录</a>
+
+		<a href="#" class="submit" onclick="test11();" >本地存储写入</a>
+		<a href="#" class="submit" onclick="test12();" >本地存储读取</a>
+		<a href="#" class="submit" onclick="test13();" >本地存储清空</a>
+
+		<a href="#" class="submit" onclick="test14();" >强制退出</a>
+		<a href="#" class="submit" onclick="test15('en');" >设定语言-英语</a>
+		<a href="#" class="submit" onclick="test15();" >设定语言-汉语(默认)</a>
+
+		<!--
+		<a href="#" class="submit" onclick="test16();" >开始上传历史位置数据</a>
+		<a href="#" class="submit" onclick="test17();" >获取第一条位置数据</a>
+		<a href="#" class="submit" onclick="test18();" >获取最后一条位置数据</a>
+		<a href="#" class="submit" onclick="test19();" >删除一条位置数据</a>
+		-->
+		
+		<a href="#" class="submit" onclick="test20();" >启动相机</a>
+		<a href="#" class="submit" onclick="getaddr();">获取当前地址</a>
+		<a href="#" class="submit" onclick="markimg();" >图片加水印</a>
+		<a href="#" class="submit" onclick="lrzimg();" >图片压缩</a>
+		<a href="#" class="submit" onclick="upimg();" >图片上传</a>
+		
+		<a href="#" class="submit" onclick="test22();" >本地存储(上行数据)写入</a>
+		<a href="#" class="submit" onclick="test23();" >本地存储(上行数据)逐一读取并运行</a>
+		
+		<a href="#" class="submit" onclick="test24();" >唤起地图导航</a>
+
+		<p id="out"></p>
+		<img id="img" width="200px" />
+
+			</div>
+		</div>
+
+		<script>
+		var portal_page = $('#portal_page');
+		portal_page.live('pageshow',function(e, ui){
+			var myscroll = new iScroll("wrapper");
+			$('#img').load(function() {
+				myscroll.refresh();
+			});
+		});
+
+		//调试消息
+		function out(msg) {
+			$('#out').html(msg);
+		}
+		
+		function test1() {
+			alert(isNetworkConnected());
+		}
+        function test21() {
+            alert(isGpsServiceRunning());
+        }
+		function test2() {
+			sendSMS("10086", "113");
+		}
+		function test3() {
+			sendMail("smtp.163.com", "25", "xxx@163.com", "pass", "xxx@163.com", "xxx@qq.com", "SOS", "a SOS massage");
+		}
+		function initLocationPar() {
+			initLocationService(1, 1, 5, 10, 2);
+		}
+		function test4() {
+			var username = local.get("username");
+			startLocationService(username, "case 1");
+		}
+		function test5() {
+			stopLocationService();
+		}
+		function test6() {
+			alert(isLocationServiceRunning());
+		}
+		function test7() {
+			startGestureLockSet('user01');
+		}
+		function test8() {
+			clearGestureLockSet();
+		}
+		function test9() {
+			alert(isGestureLockSet());
+		}
+		function test10() {
+			startGestureLockLogin();
+		}
+		function test11() {
+			nativeStorageSave('xxx', 'yyy');
+		}
+		function test12() {
+			nativeStorageLoad('xxx', '11');
+		}
+		function test13() {
+			nativeStorageClear();
+		}
+		function test14() {
+			quitApp();
+		}
+		function test15(lang) {
+			if (lang) {
+				setSysConfigLang(lang);
+			} else {
+				setSysConfigLang('zh_CN');
+			}
+		}
+		
+		function viewLoc() {
+			var loc = getLastKnownLoaction();
+			var msg = JSON.stringify(loc);
+			alert(msg);
+		}
+		
+		function test16() {
+			startUploadLocationHistory();
+		}
+		function test17() {
+			fetchFirstLocationHistory();
+		}
+		function test18() {
+			fetchLastLocationHistory();
+		}
+		function test19() {
+			deleteLocationHistory(1);
+		}
+		function test20() {
+			startCamera();
+		}
+		function test22() {
+			var i = 0;
+			for (i = 0; i < 5; i++) {
+				var data = {};
+				data.xx = i;
+				//...
+				addNativeStorageWithFunc(data, "testExec");
+			}
+		}
+		function test23() {
+			startExecuteNativeStorageWithFunc();
+		}
+		function testExec(obj) {
+			//这个函数里可以对读取的缓存数据做上传处理等等
+			var ss = obj.xx;
+			$('#out').html(ss);
+		}
+		
+		function test24() {
+			callNavi('水立方');
+		}
+		
+		
+		//显示图片
+		function outimg(src) {
+			$('#img').attr('src', src);
+		}
+		
+		//图片压缩
+		//https://github.com/think2011/localResizeIMG/wiki
+		function lrzimg() {
+			showLoading();
+			var imgsrc = $('#img').attr('src');
+			lrz(imgsrc, { quality: 0.7 })  //压缩比
+			.then(function (rst) {
+				$('#img').attr('src', rst.base64);
+			})
+			.catch(function (err){
+				alert('error');
+			})
+			.always(function () {
+				showHide();
+			});
+		}
+		
+		//图片加水印
+		//http://brianium.github.io/watermarkjs/docs.html
+		function markimg() {
+			showLoading();
+			var imgsrc = $('#img').attr('src');
+			if (/^data:/.test(imgsrc)) imgsrc = dataURItoBlob(imgsrc);
+			watermark([imgsrc])
+			.dataUrl(watermark.text.lowerRight(getWatermarkWord(), '128px 微软雅黑', '#fff', 0.5))
+			.then(function(url) {
+				$('#img').attr('src', url);
+				showHide();
+			});
+		}
+		
+		//图片格式转换
+		//http://stackoverflow.com/questions/4998908/convert-data-uri-to-file-then-append-to-formdata
+		function dataURItoBlob (dataURI) {
+			// convert base64/URLEncoded data component to raw binary data held in a string
+			var byteString;
+			if (dataURI.split(',')[0].indexOf('base64') >= 0)
+				byteString = atob(dataURI.split(',')[1]);
+			else
+				byteString = unescape(dataURI.split(',')[1]);
+			// separate out the mime component
+			var mimeString = dataURI.split(',')[0].split(':')[1].split(';')[0];
+			// write the bytes of the string to a typed array
+			var ia = new Uint8Array(byteString.length);
+			for (var i = 0; i < byteString.length; i++) {
+				ia[i] = byteString.charCodeAt(i);
+			}
+			return new Blob([ia], {type:mimeString});
+		}
+		
+		//图片上传
+		function upimg() {
+			showLoading();
+			var formData = new FormData();
+			var file = dataURItoBlob($('#img').attr('src'));
+			formData.append('img', file);
+			$.ajax({
+				url: contextPath+"/imageDemo/upload.xhtml", //这个地址做了跨域处理
+				data: formData,
+				processData: false,
+				contentType: false,
+				type: 'POST',
+				dataType: 'json',
+				success: function (msg) {
+					if($.trim(msg.returnCode) == '0') {
+						alert('ok');
+					}
+				},
+				complete: function() {
+					showHide();
+				}
+			});
+		}
+		
+		//获取当前地址
+		var lastKnownAddress = '';
+		function getaddr() {
+			if (!isNetworkConnected()) {
+				alert('没有网络，无法获取地址!');
+				return;
+			}
+			var loc = getLastKnownLoaction();
+			if (!loc) {
+				alert('LastKnownLoaction 为空!');
+				return;
+			}
+			//
+			showLoading();
+			var geocoder = new AMap.Geocoder({
+				radius: 1000,
+				extensions: "all"
+			});
+			var lnglatXY = [loc.longitude, loc.latitude];
+			geocoder.getAddress(lnglatXY, function(status, result) {
+				if (status === 'complete' && result.info === 'OK') {
+					lastKnownAddress = result.regeocode.formattedAddress;
+				} else {
+					lastKnownAddress = '未知地点';
+				}
+				out(lastKnownAddress);
+				showHide();
+			});
+		}
+		
+		//拼装水印文字
+		function getWatermarkWord() {
+			var username = local.get("username");
+			return username + " " + getNowString() + " " + lastKnownAddress;
+		}
+		
+		//格式化当前时间
+		function getNowString() {
+			var date = new Date();
+			var seperator1 = "-";
+			var seperator2 = ":";
+			var month = date.getMonth() + 1;
+			var strDate = date.getDate();
+			if (month >= 1 && month <= 9) month = "0" + month;
+			if (strDate >= 0 && strDate <= 9) strDate = "0" + strDate;
+			var currentdate = date.getFullYear() + seperator1 + month + seperator1 + strDate
+				+ " " + date.getHours() + seperator2 + date.getMinutes() + seperator2 + date.getSeconds();
+			return currentdate;
+		}
+	
+		//设定服务地址测试用
+		local.set("server_config","192.168.1.2:8080");
+		refreshServerConfig();
+		</script>
+	</div>
+
+</body>
+</html>

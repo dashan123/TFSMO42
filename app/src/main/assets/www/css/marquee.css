@@ -1,0 +1,43 @@
+
+.NoticeDiv {
+	width: 100%;
+	float: left;
+	display: inline-block;
+	overflow: hidden;
+	box-sizing: border-box;
+	height: 40px;
+	position: relative;
+	cursor: pointer;
+}
+
+.notice, *[class^="notice"] {
+	display: inline-block;
+	white-space: nowrap;
+	position:absolute;
+}
+
+.notice{
+  margin-left: 2px;
+}
+
+.notice-items{
+  display: inline-block;
+  margin: 0;
+  height: 40px;
+  position: relative;
+}
+
+.notice-items div{
+  display: inline-block;
+  line-height: 40px;
+  color: #fff;
+}
+
+.notice-items div:after{
+	content: "|";
+	margin: 0 1em;
+	color: red;
+}
+.notice-items div.no-after:after{
+	content: none;
+}

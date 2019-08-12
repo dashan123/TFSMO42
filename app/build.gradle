@@ -1,0 +1,105 @@
+apply plugin: 'com.android.application'
+
+//用于输出自定义的带日期的APK文件名
+def releaseTime() {
+    return new Date().format("yyMMdd", TimeZone.getTimeZone("UTC"))
+}
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.3"
+
+    useLibrary 'org.apache.http.legacy'
+
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+    }
+
+//    signingConfigs {
+        //调试版的keystore
+//        debug {
+//            storeFile file("keystore文件所在位置")
+//            storePassword "你规定的密码"
+//            keyAlias "在创建keystore时你所填写的alias"
+//            keyPassword "你规定的密码"
+//        }
+        //发布版的keystore
+//        release {
+//            storeFile file("keystore文件所用位置")
+//            storePassword "你规定的密码"
+//            keyAlias "在创建该keystore文件时你所写的alias"
+//            keyPassword "你规定的密码"
+//        }
+//    }
+
+//打包APK时出现的问题解决方法
+    lintOptions{
+        checkReleaseBuilds false
+        //Or,if you prefer,you can continue to check for errors in release builds,
+        //but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    defaultConfig {
+        multiDexEnabled true
+        applicationId "cn.com.cloud9.tfsmo.android42"
+        minSdkVersion 16
+        targetSdkVersion 19
+        versionCode 1
+        versionName "1.1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        sourceSets {
+            main {
+                jni.srcDirs = []
+            }
+        }
+    }
+
+    //用于自定义APK名称
+    android.applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                //这里修改apk文件名
+                def fileName = "tfsmo4Android42v${releaseTime() }.apk"
+                //自定义部分 + productFlavors + versionCode + versionName + 日期
+//                def fileName = "demo_${variant.productFlavors[0].name}-${defaultConfig.versionCode}-${defaultConfig.versionName}-${releaseTime() }.apk"
+                output.outputFile = new File(outputFile.parent, fileName)
+            }
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile project(':scantwobarcodes')
+    compile project(':SubsamplingLlibrary')
+    testCompile 'junit:junit:4.12'
+    //    compile 'cn.hugeterry.updatefun:updatefun:1.6.6'
+    //OKGO
+    compile 'com.lzy.net:okgo:2.1.4'
+    //可以单独使用，不需要依赖下方的扩展包
+    //    compile 'com.lzy.net:okrx:0.1.0'        //RxJava扩展支持，根据需要添加
+    compile 'com.lzy.net:okserver:1.1.0'
+    //下载管理和上传管理扩展，根据需要添加
+    //    或者
+    //    compile 'com.lzy.net:okgo:+'        //版本号使用 + 可以自动引用最新版
+    //    compile 'com.lzy.net:okrx:+'        //版本号使用 + 可以自动引用最新版
+    //    compile 'com.lzy.net:okserver:+'    //版本号使用 + 可以自动引用最新版
+    compile files('libs/jcore-android-1.1.7.jar')
+    compile files('libs/jpush-android-3.0.9.jar')
+//    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile files('libs/AMap_Location_V3.4.0_20170427.jar')
+
+    //takephoto
+    compile 'com.jph.takephoto:takephoto_library:4.0.3'
+}

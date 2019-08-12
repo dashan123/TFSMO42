@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+     <color name="result_view">#b0000000</color>
+      <color name="viewfinder_mask">#60000000</color>
+      <color name="possible_result_points">#c0ffff00</color>
+      <color name="scan_codes_bg">#e444</color>
+
+    <color name="gary">#898989</color>
+    <color name="blue_light">#ff33b5e5</color>
+
+
+</resources>
